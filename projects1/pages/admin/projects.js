@@ -28,7 +28,7 @@ const AdminProjects = () => {
             .map((project, index) => `
       <tr>
       <td>${index + 1}</td>
-      <td>${projects.name}</td>
+      <td>${project.name}</td>
       <td>
         <button class="btn btn-danger btn-remove" data-id="${project.id}">Remove</button>
         <a href="/admin/projects//edit">Sửa</a>

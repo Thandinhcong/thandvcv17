@@ -16,7 +16,7 @@ router.on("/contacts", () => render(ContactsFage, app));
 router.on("/abouts", () => render(AboutsFage, app));
 router.on("/posts", () => render(PostsFage, app));
 router.on("/projects", () => render(ProjectsFage, app));
-router.on("/project/:id", ({ params }) => render(DeltaiProjectFage(params), app));
+router.on("/projects/:id", ({ data }) => render(() => DeltaiProjectFage(data), app));
 //admin
 router.on("/admin/projects", () => render(AdminProjects, app));
 //not found để thông báo khi chuyển trang mà không có đường dẫn
