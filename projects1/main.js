@@ -1,23 +1,22 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+const app = document.querySelector("#app");
+import { router, render } from "./lib";
+import AboutsFage from "./pages/abouts";
+import ContactsFage from "./pages/contacts";
+import HomeFage from "./pages/homes";
+import PostsFage from "./pages/posts";
+import ProjectsFage from "./pages/projects";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+
+
+// hiển thị ra ngoài màn hình
+router.on("/", () => render(HomeFage, app));
+router.on("/contacts", () => render(ContactsFage, app));
+router.on("/abouts", () => render(AboutsFage, app));
+router.on("/posts", () => render(PostsFage, app));
+router.on("/projects", () => render(ProjectsFage, app));
+
+//not found để thông báo khi chuyển trang mà không có đường dẫn
+router.notFound(() => render(notFound, app));
+// sử dụng resolve để hiển thị giao diện
+router.resolve();
