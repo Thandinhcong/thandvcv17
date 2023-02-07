@@ -8,6 +8,7 @@ import HomeFage from "./pages/homes";
 import PostsFage from "./pages/posts";
 import ProjectsFage from "./pages/projects";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AdminAddProjects from "./pages/admin/projects-add";
 
 
 // hiển thị ra ngoài màn hình
@@ -18,6 +19,7 @@ router.on("/posts", () => render(PostsFage, app));
 router.on("/projects", () => render(ProjectsFage, app));
 router.on("/projects/:id", ({ data }) => render(() => DeltaiProjectFage(data), app));
 //admin
+router.on("/admin/projects/add", () => render(AdminAddProjects, app));
 router.on("/admin/projects", () => render(AdminProjects, app));
 //not found để thông báo khi chuyển trang mà không có đường dẫn
 router.notFound(() => render(notFound, app));
