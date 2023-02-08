@@ -9,6 +9,7 @@ import PostsFage from "./pages/posts";
 import ProjectsFage from "./pages/projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AdminAddProjects from "./pages/admin/projects-add";
+import AdminEditProject from "./pages/admin/projects-edit";
 
 
 // hiển thị ra ngoài màn hình
@@ -19,6 +20,7 @@ router.on("/posts", () => render(PostsFage, app));
 router.on("/projects", () => render(ProjectsFage, app));
 router.on("/projects/:id", ({ data }) => render(() => DeltaiProjectFage(data), app));
 //admin
+router.on("/admin/projects/:id/edit", ({ data }) => render(() => AdminEditProject(data), app));
 router.on("/admin/projects/add", () => render(AdminAddProjects, app));
 router.on("/admin/projects", () => render(AdminProjects, app));
 //not found để thông báo khi chuyển trang mà không có đường dẫn

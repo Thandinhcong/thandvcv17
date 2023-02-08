@@ -43,7 +43,7 @@ const AdminProjects = () => {
       <td>${project.name}</td>
       <td with="150">
         <button class="btn btn-danger btn-remove" data-id="${project.id}">Remove</button>
-        <a href="/admin/projects//edit">Sửa</a>
+        <a href="/admin/projects/${project.id}/edit">Sửa</a>
       </td>
     </tr>
         `).join("")
