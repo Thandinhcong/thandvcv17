@@ -3,18 +3,23 @@ import { router, useEffect } from "../../lib";
 const AdminAddProjects = () => {
   useEffect(() => {
     //lấy dữ liệu từ localstorage
-    const projects = JSON.parse(localStorage.getItem("projects")) || [];
     const form = document.getElementById("form-add");
     const projectName = document.getElementById("project-name");
+
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      //thêm phần tử vào mảng
-      projects.push({ id: projects.length + 1, name: projectName.value });
-      //lưu vào localStorage và trả vể giá trị chuỗi
-      localStorage.setItem("projects", JSON.stringify(projects));
-      //chuyển huownbgs về trang admin project
-      router.navigate("/admin/projects");
-
+      const NewProduct = {
+        name: projectName.value
+      }
+      fetch("http://localhost:3000/projects", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json"
+        }
+        , body: JSON.stringify(NewProduct)
+      }).then(() => {
+        router.navigate("/admin/projects");
+      })
     })
   });
 
