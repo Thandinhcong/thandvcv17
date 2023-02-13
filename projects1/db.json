@@ -1,21 +1,16 @@
 {
   "projects": [
     {
-      "name": "Dự án một",
-      "outher": "Thản",
+      "name": "Dự án 1",
+      "id": 1
+    },
+    {
+      "name": "Dự án mẫu",
+      "id": 2
+    },
+    {
+      "name": "Dự án 2",
       "id": 3
-    },
-    {
-      "name": "Dự án một",
-      "outher": "Thản",
-      "id": 4
-    },
-    {
-      "id": 5
-    },
-    {
-      "name": "Dự án Mới",
-      "id": 6
     }
   ]
 }

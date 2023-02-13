@@ -2,12 +2,12 @@
 import { useEffect, useState } from "../../lib"
 const AdminProjects = () => {
   //Khởi tạo biến data và setData ,giá trị là một mảng rỗng
-  const [projects, setProjects] = useState([]);
+  const [projects, setProject] = useState([]);
   //lấy dữ liệu từ localStorage gán vào biến data
   useEffect(() => {
     fetch("http://localhost:3000/projects")
-      .then(response => response.json())
-      .then(data => setProjects(data))
+      .then((response) => response.json())
+      .then((data) => setProject(data))
     // const projects = JSON.parse(localStorage.getItem('projects')) || [];
     // setData(projects)
   }, [])
@@ -18,12 +18,14 @@ const AdminProjects = () => {
       btn.addEventListener("click", function () {
         //lấy id từ data id cuat button
         const id = btn.dataset.id;
-        //lọc ra các phần tử có id khác với id cuart button
-        const newProjects = projects.filter((project) => project.id != id);
-        //lưu vào localstorage
-        localStorage.setItem("projects", JSON.stringify(newProjects));
-        //gán lại giá trị cho biến data
-        setData(newProjects);
+        fetch(`"http://localhost:3000/projects/${id}"`, {
+          method: "DELETE",
+        }).then(() => {
+          //lọc ra các phần tử  có id khác với id của button
+          const newProjects = projects.filter((project) => project.id != id)
+          //gán lại giá trị
+          setProject(newProjects)
+        })
       })
     }
   })
