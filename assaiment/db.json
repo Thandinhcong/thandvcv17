@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "Dự án mẫu",
+      "member": "Than",
+      "outher": "datlt",
+      "id": 1
+    },
+    {
+      "name": "Dự án mẫu",
+      "member": "Than",
+      "outher": "datlt",
+      "id": 2
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Đinh Công Thản",
+      "email": "Dinhcongthan03@gamil.com",
+      "phone": "0523892062",
+      "address": "Hưng Hà-Thái Bình",
+      "job": "font-end developer",
+      "sex": "nữ",
+      "Education": "FPT Polytechnic",
+      "id": 4
+    }
+  ]
+}
