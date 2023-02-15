@@ -20,9 +20,17 @@
       "phone": "0523892062",
       "address": "Hưng Hà-Thái Bình",
       "job": "font-end developer",
-      "sex": "nữ",
+      "sex": "Nam",
       "Education": "FPT Polytechnic",
+      "img": "",
+      "date": "09/06/2003",
       "id": 4
+    }
+  ],
+  "skills": [
+    {
+      "skill": "HTML 5 & CCS3",
+      "id": 2
     }
   ]
 }

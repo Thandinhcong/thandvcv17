@@ -11,9 +11,9 @@ const MainProfile = () => {
 
     return `
 <div class="main-profile">
-    <div class="profile-introduce fs-3 text-primary">
+    <div class="profile-introduce fs-3 text-primary ">
        ${profiles.map((profile) => `
-       <p>Xin chào , Tôi tên là ${profile.name} </p>
+       <p class="text-sm-center">Xin chào ,<br> Tôi tên là ${profile.name} </p>
        <p>Tôi là một ${profile.job}</p>
        `).join("")
         }

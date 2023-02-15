@@ -17,6 +17,8 @@ const AdminEditProfile = ({ id }) => {
         const job = document.getElementById("profile-job");
         const sex = document.getElementById("profile-sex");
         const Education = document.getElementById("profile-education");
+        const img = document.getElementById("profile-img")
+        const date = document.querySelector("#profile-date");
         form.addEventListener("submit", function (e) {
             e.preventDefault();
             const newProfiles = {
@@ -27,6 +29,8 @@ const AdminEditProfile = ({ id }) => {
                 job: job.value,
                 sex: sex.value,
                 Education: Education.value,
+                img: img.value,
+                date: date.value,
             }
             fetch(`http://localhost:3000/profiles/${id}`, {
                 method: "PUT",
@@ -57,6 +61,10 @@ const AdminEditProfile = ({ id }) => {
         <input type="text" placeholder="Nhập giói tính" id="profile-sex" class="form-control" value="${profile.sex}">
         <label for="" class="form-label">Trường học</label>
         <input type="text" placeholder="Nhập Trường học" id="profile-education" class="form-control" value="${profile.Education}">
+        <label for="" class="form-label">image</label>
+        <input type="file" id="profile-img" class="form-control" value="${profile.img}">
+        <label for="" class="form-label">Ngày sinh</label>
+        <input type="date" id="profile-date" class="form-control" value="${profile.date}">
       </div>
       <button class="btn btn-primary">Sửa</button>
     </form>

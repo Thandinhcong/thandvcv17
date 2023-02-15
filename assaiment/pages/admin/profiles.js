@@ -1,30 +1,30 @@
 import { useEffect, useState } from "../../lib";
 
 const AdminProfile = () => {
-    const [profiles, setProfile] = useState([])
-    useEffect(() => {
-        fetch(" http://localhost:3000/profiles")
-            .then((reponse) => reponse.json())
-            .then((data) => setProfile(data))
-    }, [])
-    useEffect(() => {
-        const btns = document.querySelectorAll(".btn-remove")
-        for (let btn of btns) {
-            btn.addEventListener("click", function () {
+  const [profiles, setProfile] = useState([])
+  useEffect(() => {
+    fetch(" http://localhost:3000/profiles")
+      .then((reponse) => reponse.json())
+      .then((data) => setProfile(data))
+  }, [])
+  useEffect(() => {
+    const btns = document.querySelectorAll(".btn-remove")
+    for (let btn of btns) {
+      btn.addEventListener("click", function () {
 
-                //lấy id
-                const id = btn.dataset.id;
-                fetch(` http://localhost:3000/profiles/${id}`, {
-                    method: "DELETE",
-                }).then(() => {
-                    const NewProfiles = profiles.filter((profile) => profile.id != id)
-                    setProfile(NewProfiles)
-                })
+        //lấy id
+        const id = btn.dataset.id;
+        fetch(` http://localhost:3000/profiles/${id}`, {
+          method: "DELETE",
+        }).then(() => {
+          const NewProfiles = profiles.filter((profile) => profile.id != id)
+          setProfile(NewProfiles)
+        })
 
-            })
-        }
-    })
-    return `
+      })
+    }
+  })
+  return `
     <div class="container">
     <h1 class="info p-10 bg-primary text-light">Thông tin người dùng</h1>
     <table class="table table-bordered">
@@ -38,6 +38,8 @@ const AdminProfile = () => {
           <td>Job</td>
           <td>sex</td>
           <td>Education</td>
+          <td>image</td>
+          <td>date</td>
           <td></td>
         </tr>
       </thead>
@@ -52,6 +54,8 @@ const AdminProfile = () => {
       <td>${profile.job}</td>
       <td>${profile.sex}</td>
       <td>${profile.Education}</td>
+      <td>${profile.img}</td>
+      <td>${profile.date}</td>
       <td>
         <button class="btn btn-remove btn-primary" data-id="${profile.id}">Remove</button>
         <a href="/admin/profiles/${profile.id}/edit">Sửa</a>
