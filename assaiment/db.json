@@ -39,6 +39,18 @@
     {
       "name": "PHP",
       "id": 5
+    },
+    {
+      "name": "Reactjs",
+      "id": 6
+    },
+    {
+      "name": "Github and PR-driven development",
+      "id": 7
+    },
+    {
+      "name": "My SQL",
+      "id": 8
     }
   ]
 }

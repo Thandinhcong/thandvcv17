@@ -41,7 +41,7 @@ const AdminAddprofile = () => {
     <h1>Thêm thông tin người dùng</h1>
     <form action="" id="form-add">
       <div class="form-group">
-        <label for="" class="form-label">Họ tên</label>
+      <label for="" class="form-label">Họ tên</label>
       <input type="text" placeholder="Nhập họ tên" id="profile-name" class="form-control">
       <label for="" class="form-label">Email</label>
       <input type="text" placeholder="Nhập email" id="profile-email" class="form-control">
