@@ -11,7 +11,6 @@ const AdminProfile = () => {
     const btns = document.querySelectorAll(".btn-remove")
     for (let btn of btns) {
       btn.addEventListener("click", function () {
-
         //lấy id
         const id = btn.dataset.id;
         fetch(` http://localhost:3000/profiles/${id}`, {

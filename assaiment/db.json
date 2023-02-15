@@ -29,8 +29,16 @@
   ],
   "skills": [
     {
-      "skill": "HTML 5 & CCS3",
-      "id": 2
+      "name": "HTML 5 & CCS3",
+      "id": 3
+    },
+    {
+      "name": "Javascript",
+      "id": 4
+    },
+    {
+      "name": "PHP",
+      "id": 5
     }
   ]
 }

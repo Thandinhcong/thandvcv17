@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainProfile from "../components/main/main-info";
 import introduceInfo from "../components/main/introduce";
 import ContactFage from "./contacts";
+import SkillsFageList from "../components/main/skillsFage";
 const HomeFage = () => {
     return `
    <div class="container container-fluid bg-dark">
@@ -13,6 +14,7 @@ const HomeFage = () => {
    ${MainProfile()}
    ${introduceInfo()}
    ${ContactFage()}
+   ${SkillsFageList()}
    </main>
    </div>
 
