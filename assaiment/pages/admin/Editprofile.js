@@ -1,12 +1,13 @@
 
 import { router, useState, useEffect } from "../../lib"
-
+import axios from "axios";
+import { getprofile } from "../../api/profiles";
 const AdminEditProfile = ({ id }) => {
     const [profile, setProfiles] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:3000/profiles/${id}`)
-            .then((response) => response.json())
-            .then((data) => setProfiles(data))
+        getprofile()
+            .then(({ data }) => setProfiles(data))
+            .catch((error) => console.log(error))
     }, [])
     useEffect(() => {
         const form = document.getElementById("form-edit");
@@ -32,14 +33,17 @@ const AdminEditProfile = ({ id }) => {
                 img: img.value,
                 date: date.value,
             }
-            fetch(`http://localhost:3000/profiles/${id}`, {
-                method: "PUT",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(newProfiles),
-            })
-                .then(() => router.navigate("/admin/profiles"));
+            axios.put(`http://localhost:3000/profiles/${id}`, newProfiles)
+                .then(() => router.navigate("/admin/profiles"))
+                .catch((error) => console.log(error))
+            // fetch(`http://localhost:3000/profiles/${id}`, {
+            //     method: "PUT",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //     },
+            //     body: JSON.stringify(newProfiles),
+            // })
+            //     .then(() => router.navigate("/admin/profiles"));
         });
     })
     return `

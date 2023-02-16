@@ -1,11 +1,12 @@
 import { useEffect, useState } from "../../lib";
-
+import axios from "axios";
+import { getProfiles, deleteprofile } from "../../api/profiles";
 const AdminProfile = () => {
   const [profiles, setProfile] = useState([])
   useEffect(() => {
-    fetch(" http://localhost:3000/profiles")
-      .then((reponse) => reponse.json())
-      .then((data) => setProfile(data))
+    getProfiles()
+      .then(({ data }) => setProfile(data))
+      .catch((error) => console.log(error))
   }, [])
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-remove")
@@ -13,13 +14,15 @@ const AdminProfile = () => {
       btn.addEventListener("click", function () {
         //lấy id
         const id = btn.dataset.id;
-        fetch(` http://localhost:3000/profiles/${id}`, {
-          method: "DELETE",
-        }).then(() => {
-          const NewProfiles = profiles.filter((profile) => profile.id != id)
-          setProfile(NewProfiles)
-        })
-
+        const confirm = window.confirm("Bạn có muốn xóa nó không");
+        if (confirm) {
+          deleteprofile(id)
+            .then(() => {
+              const NewProfiles = profiles.filter((profile) => profile.id != id)
+              setProfile(NewProfiles)
+            })
+            .catch((error) => console.log(error));
+        }
       })
     }
   })

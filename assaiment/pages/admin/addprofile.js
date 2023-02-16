@@ -1,7 +1,7 @@
 import { router, useEffect } from "../../lib";
-
+import axios from "axios";
+import { addprofile } from "../../api/profiles";
 const AdminAddprofile = () => {
-
     useEffect(() => {
         const form = document.getElementById("form-add");
         const name = document.getElementById("profile-name");
@@ -13,8 +13,10 @@ const AdminAddprofile = () => {
         const Education = document.getElementById("profile-education");
         const img = document.getElementById("profile-img")
         const date = document.getElementById("profile-date")
-        form.addEventListener("submit", function (e) {
+        form.addEventListener("submit", async function (e) {
             e.preventDefault();
+            console.log(img.files)
+            const urls = await upLoadFile(img.files);
             const newProfiles = {
                 name: name.value,
                 email: email.value,
@@ -23,19 +25,38 @@ const AdminAddprofile = () => {
                 job: job.value,
                 sex: sex.value,
                 Education: Education.value,
-                img: img.value,
                 date: date.value,
+                gallery: urls,
             }
-            fetch(" http://localhost:3000/profiles", {
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json"
-                },
-                body: JSON.stringify(newProfiles)
-            })
-                .then(() => router.navigate("admin/profiles"))
+            addprofile(newProfiles)
+                .then(() => { router.navigate("/admin/profiles") })
+                .catch((error) => console.log(error))
         })
     })
+
+    const upLoadFile = async (files) => {
+        if (files) {
+            const CloudName = 'dxzlnojyv';
+            const Preset_Name = 'demo-upload';
+            const Foldel_Name = "ES6";
+            const urls = [];
+            const api = `https://api.cloudinary.com/v1_1/${CloudName}/image/upload`;
+
+            const formData = new FormData();
+            formData.append('upload_preset', Preset_Name);
+            formData.append("folder", Foldel_Name);
+            for (const file of files) {
+                formData.append("file", file);
+                const response = await axios.post(api, formData, {
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                    },
+                });
+                urls.push(response.data.secure_url)
+            }
+            return urls;
+        }
+    }
     return `
 <div class="add-profile">
     <h1>Thêm thông tin người dùng</h1>
@@ -56,10 +77,10 @@ const AdminAddprofile = () => {
       <label for="" class="form-label">Trường học</label>
       <input type="text" placeholder="Nhập Trường học" id="profile-education" class="form-control">
       <label for="" class="form-label">image</label>
-      <input type="file" id="profile-img" class="form-control">
+      <input type="file" id="profile-img" multiple class="form-control">
       </div>
       <label for="" class="form-label">Ngày sinh</label>
-      <input type="date" id="profile-date" class="form-control">
+      <input type="date" id="profile-date"  class="form-control">
       </div>
       <button class="btn btn-primary">Thêm</button>
     </form>
