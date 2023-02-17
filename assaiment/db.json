@@ -15,30 +15,18 @@
   ],
   "profiles": [
     {
-      "id": 4,
       "name": "Đinh Công Thản ",
-      "email": "Dinhcongthan03@gamil.com",
+      "email": "Dinhcongthan2003@gmail.com",
       "phone": "0523892062",
-      "address": "Hưng Hà-Thái Bình",
-      "job": "Font-end developer",
+      "address": "Hưng hà-Thái Bình",
+      "job": "Fullsatck developer",
       "sex": "Nam",
-      "Education": "FPT Polytechnic",
-      "img": "",
-      "date": ""
-    },
-    {
-      "name": "Thản trần",
-      "email": "Dinhcongthan2003333@gmail.com",
-      "phone": "0523892062",
-      "address": "Hưng hà",
-      "job": "fullsatck developer",
-      "sex": "nữ",
       "Education": "FPT polytechnic",
-      "date": "213131",
+      "date": "09-06-2003",
       "gallery": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676607381/ES6/kykzcvajetowxicmjozz.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676613944/ES6/vesb3pbdbysb7fodbexu.jpg"
       ],
-      "id": 6
+      "id": 5
     }
   ],
   "skills": [

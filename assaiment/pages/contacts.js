@@ -21,7 +21,7 @@ const ContactFage = () => {
                 </div>
                <div class="flex-fill">        
                     <p>Giới tính : ${profile.sex}</p>
-                    <p>Facebook :</p>
+                    <p>Facebook : Dinhcongthan.official</p>
                     <p>Ngày sinh : ${profile.date}</p>
                     <p>Nghề nghiệp : ${profile.job}</p>      
                </div>

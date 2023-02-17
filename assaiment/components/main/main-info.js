@@ -12,7 +12,7 @@ const MainProfile = () => {
 
     return `
 <div class="main-profile d-flex justify-content-between">
-    <div class="profile-introduce fs-3 text-primary " style="margin-top:20px">
+    <div class="profile-introduce fs-3 text-primary " style="margin-top:30px">
        ${profiles.map((profile) => `
        <p class="product-name text-sm-center fs-1">Xin chào các bạn <br> Tôi tên là :<br> <label class="lable-name">${profile.name}</label> </p>
        <p class="ms-4 fs-2">Tôi là một :<lable class="item-job"> ${profile.job}</lable></p>
@@ -20,9 +20,9 @@ const MainProfile = () => {
         }
     </div>
     <div class="frofile-img ">
-        ${ProjectGallery({
-            img: "https://danviet.mediacdn.vn/zoom/700_438/2021/3/13/359-16156314575361327375368-crop-16156314855551135612326.jpg"
-        })
+        ${profiles.map((profile) =>
+            `<img src="${profile.gallery?.[0]}" class="rounded-circle " width="400px"/>`
+        ).join("")
         }
     </div>
 </div>
