@@ -1,7 +1,6 @@
 const app = document.querySelector("#app");
 import "bootstrap/dist/css/bootstrap.min.css";
 import ListContact from "./components/main/ListContact";
-
 import { render, router } from "./lib";
 import AdminAddprofile from "./pages/admin/addprofile";
 import AdminEditProfile from "./pages/admin/Editprofile";
@@ -13,6 +12,7 @@ import Adminprojects from "./pages/admin/projects";
 import AdminAddSkillFage from "./pages/admin/skill/addSkills";
 import AdminSkillFage from "./pages/admin/skill/listSkills";
 import HomeFage from "./pages/home";
+import NotFound from "./pages/not-found";
 import ProjectPage from "./pages/projects";
 
 router.on("/", () => render(HomeFage, app));
@@ -30,4 +30,5 @@ router.on("/admin/products/:id/edit", ({ data }) => render(() => AdminEditProduc
 //skills
 router.on("/admin/skills", () => render(AdminSkillFage, app));
 router.on("/admin/skills/add", () => render(AdminAddSkillFage, app));
+router.notFound(() => render(NotFound, app));
 router.resolve();
