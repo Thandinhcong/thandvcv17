@@ -1,8 +1,8 @@
-import { menus } from "../../data";
+import menus from "../../data";
 import "bootstrap/dist/css/bootstrap.min.css";
 const Nav = () => {
     return `
-    <ul class=""nav>
+    <ul class="">
         <li class="nav nav-item">
             ${menus.map(
         (menu) => `<a href="${menu.path}" class="nav nav-link p-4">${menu.name}</a>`)

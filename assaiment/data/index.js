@@ -3,5 +3,5 @@ const menus = [
     { name: "Abouts", path: "/abouts" },
     { name: "Contacts", path: "/contacts" },
     { name: "Projects", path: "/projects" }
-]
-export { menus }
+];
+export default menus;

@@ -17,7 +17,7 @@ const ListProducts = () => {
             ${products.map((product) => `
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 product-item border">
        <div class="cart">
-       <img src="${product.image}" class="cart-img-top" style="" width="200px" alt="" height="200px">
+       <img src="${product.image}" class="cart-img-top" style="" width="100%" alt="" >
        <h5 class="product-item-title
         cart-title">${product.name}</h5>
        <p class="cart-text">${product.description}</p>

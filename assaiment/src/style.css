@@ -86,3 +86,10 @@
 .product a:hover{
     color: red;
 }
+.footer-product{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-top:solid 1px #fff;
+}
