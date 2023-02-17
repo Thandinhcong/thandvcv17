@@ -61,6 +61,28 @@
     -o-animation: my 700ms infinite; 
     animation: my 700ms infinite;
 }
-.introduct p{
-    color: wheat;
+
+.product{
+    border:1px #fff ;
+    grid-gap: 30px;
+    margin-left: 120px;
+}
+.product img{
+    padding: 5px;
+}
+.product h5{
+    color:wheat;
+    font-size: 30px;
+    text-align: center;
+}
+.product p{
+    color: white;
+}
+.product a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(211, 170, 170);
+}
+.product a:hover{
+    color: red;
 }

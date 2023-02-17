@@ -45,10 +45,10 @@ const AdminProducts = () => {
             map((product, index) => `
     <tr>
     <td>${index + 1}</td>
-    <td><img src="${product.image}"/></td>
+    <td><img src="${product.image}" width="150px" height="200px"/></td>
     <td>${product.name}</td>
     <td>${product.description}</td>
-    <td><a href="${product.links}">${product.name}</a></td>
+    <td><a href="${product.links}">Xem</a></td>
     <td>
         <button class="btn btn-remove btn-danger" data-id="${product.id}">remove</button>
         <a href="/admin/products/${product.id}/edit">sửa</a>

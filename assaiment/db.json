@@ -57,26 +57,31 @@
   ],
   "products": [
     {
-      "id": 3,
-      "name": "Dự án 1 update",
-      "links": "https://github.com/Thandinhcong/D-n-1",
-      "image": {},
-      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL"
+      "name": "Dự án Mẫu",
+      "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript",
+      "link": "Dự án Mẫu",
+      "image": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642247/ES6/wpneoobiommn84wqx4jp.jpg"
+      ],
+      "id": 3
     },
     {
-      "name": "Dự án Mẫu",
-      "description": "HAhahahaaa",
-      "link": "Dự án Mẫu",
+      "name": "Xây dựng CV",
+      "description": "Dự án được tạo bởi vanillajs bootstrap",
+      "link": "Xây dựng CV",
+      "image": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642618/ES6/slpkqdiso8qtdg1dv17h.png"
+      ],
       "id": 4
     },
     {
-      "name": "Dự án Mẫu",
-      "description": "HAhahahaaa",
-      "link": "Dự án Mẫu",
+      "name": "Dự án 1 ",
+      "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript,Bootstrap",
+      "link": "Dự án 1 ",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676633337/ES6/dg9qbxbjwjoesfcjlana.png"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642691/ES6/yuezcbvykp6bzeda5h9b.jpg"
       ],
-      "id": 6
+      "id": 5
     }
   ]
 }
