@@ -1,7 +1,7 @@
 const menus = [
-    { name: "home", path: "/" },
-    { name: "abouts", path: "/abouts" },
-    { name: "contacts", path: "/contacts" },
-    { name: "projects", path: "/projects" }
+    { name: "Home", path: "/" },
+    { name: "Abouts", path: "/abouts" },
+    { name: "Contacts", path: "/contacts" },
+    { name: "Projects", path: "/projects" }
 ]
 export { menus }

@@ -11,7 +11,7 @@ const SkillsFageList = () => {
     return `
     <div class="product-skill text-primary ps-3 ">
     <h2>Kĩ năng</h2>
-   <div class="d-flex">
+   <div class="d-flex text-secondary">
    ${skills.map((skill) => `
    <p class="p-3">${skill.name}</p>
    `).join("")}

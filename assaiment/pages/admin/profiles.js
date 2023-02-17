@@ -56,7 +56,7 @@ const AdminProfile = () => {
       <td>${profile.job}</td>
       <td>${profile.sex}</td>
       <td>${profile.Education}</td>
-      <td>${profile.img}</td>
+      <td><img src="${profile.gallery?.[0]}" style="width:200px;" /></td>
       <td>${profile.date}</td>
       <td>
         <button class="btn btn-remove btn-primary" data-id="${profile.id}">Remove</button>

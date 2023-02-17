@@ -5,6 +5,7 @@ import introduceInfo from "../components/main/introduce";
 import ContactFage from "./contacts";
 import SkillsFageList from "../components/main/skillsFage";
 import ListLenguage from "../components/main/Lenguage";
+import ListProducts from "../components/main/ListProducts";
 const HomeFage = () => {
     return `
    <div class="container container-fluid bg-dark">
@@ -17,6 +18,7 @@ const HomeFage = () => {
    ${ContactFage()}
    ${SkillsFageList()}
    ${ListLenguage()}
+   ${ListProducts()}
    </main>
    </div>
 

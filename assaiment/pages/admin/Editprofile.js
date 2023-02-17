@@ -1,52 +1,45 @@
 
 import { router, useState, useEffect } from "../../lib"
 import axios from "axios";
-import { getprofile } from "../../api/profiles";
+import { getprofile, updateprofile } from "../../api/profiles";
 const AdminEditProfile = ({ id }) => {
-    const [profile, setProfiles] = useState({})
-    useEffect(() => {
-        getprofile()
-            .then(({ data }) => setProfiles(data))
-            .catch((error) => console.log(error))
-    }, [])
-    useEffect(() => {
-        const form = document.getElementById("form-edit");
-        const name = document.getElementById("profile-name");
-        const email = document.getElementById("profile-email");
-        const phone = document.getElementById("profile-phone");
-        const address = document.getElementById("profile-address");
-        const job = document.getElementById("profile-job");
-        const sex = document.getElementById("profile-sex");
-        const Education = document.getElementById("profile-education");
-        const img = document.getElementById("profile-img")
-        const date = document.querySelector("#profile-date");
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
-            const newProfiles = {
-                name: name.value,
-                email: email.value,
-                phone: phone.value,
-                address: address.value,
-                job: job.value,
-                sex: sex.value,
-                Education: Education.value,
-                img: img.value,
-                date: date.value,
-            }
-            axios.put(`http://localhost:3000/profiles/${id}`, newProfiles)
-                .then(() => router.navigate("/admin/profiles"))
-                .catch((error) => console.log(error))
-            // fetch(`http://localhost:3000/profiles/${id}`, {
-            //     method: "PUT",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //     },
-            //     body: JSON.stringify(newProfiles),
-            // })
-            //     .then(() => router.navigate("/admin/profiles"));
-        });
-    })
-    return `
+  const [profile, setProfiles] = useState({})
+  useEffect(() => {
+    getprofile(id)
+      .then(({ data }) => setProfiles(data))
+      .catch((error) => console.log(error))
+  }, [])
+  useEffect(() => {
+    const form = document.getElementById("form-edit");
+    const name = document.getElementById("profile-name");
+    const email = document.getElementById("profile-email");
+    const phone = document.getElementById("profile-phone");
+    const address = document.getElementById("profile-address");
+    const job = document.getElementById("profile-job");
+    const sex = document.getElementById("profile-sex");
+    const Education = document.getElementById("profile-education");
+    const date = document.querySelector("#profile-date");
+    const img = document.getElementById("profile-img")
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const newProfiles = {
+        id,
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        address: address.value,
+        job: job.value,
+        sex: sex.value,
+        Education: Education.value,
+        gallery: img,
+        date: date.value,
+      }
+      updateprofile(newProfiles)
+        .then(() => router.navigate("/admin/profiles"))
+        .catch((error) => console.log(error))
+    });
+  })
+  return `
     <div class="profile-edit">
     <h1>Edit thông tin</h1>
     <form action="" id="form-edit">
@@ -66,7 +59,7 @@ const AdminEditProfile = ({ id }) => {
         <label for="" class="form-label">Trường học</label>
         <input type="text" placeholder="Nhập Trường học" id="profile-education" class="form-control" value="${profile.Education}">
         <label for="" class="form-label">image</label>
-        <input type="file" id="profile-img" class="form-control" value="${profile.img}">
+        <input type="file" id="profile-img" class="form-control" value="${profile.gallery}">
         <label for="" class="form-label">Ngày sinh</label>
         <input type="date" id="profile-date" class="form-control" value="${profile.date}">
       </div>

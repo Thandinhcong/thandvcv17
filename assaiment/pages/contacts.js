@@ -11,7 +11,7 @@ const ContactFage = () => {
     return `
     <div class="contact-product text-primary m-3 ">
         <h2 class="fs-3">Liên hệ</h2>
-        <div class="contacts-item d-flex p-2">
+        <div class="contacts-item d-flex p-2 text-secondary">
         ${profiles.map((profile) => `
                 <div class="ps-3 flex-fill">
                     <p>Họ tên : ${profile.name}</p>

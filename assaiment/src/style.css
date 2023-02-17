@@ -1,0 +1,66 @@
+.lable-name{
+    font-size: 30px;
+    color: wheat;
+}
+.lable-name {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.25rem solid #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    animation: typing 8s steps(40) infinite, blinking 1s infinite;
+}
+.item-job{
+    color: wheat;
+}
+@keyframes typing {
+    0%, 100% {
+      width: 0;
+    }
+  
+    50%, 90% {
+      width: 100%;
+    }
+  }
+  
+@keyframes blinking {
+    0%, 100% {
+      border-color: transparent;
+    }
+  
+    50% {
+      border-color: #fff;
+    }
+}
+@-webkit-keyframes my {
+    0% { color: #F8CD0A; } 
+    50% { color: #fff;  } 
+    100% { color: #F8CD0A;  } 
+}
+@-moz-keyframes my { 
+    0% { color: #F8CD0A;  } 
+    50% { color: #fff;  }
+    100% { color: #F8CD0A;  } 
+}
+@-o-keyframes my { 
+    0% { color: #F8CD0A; } 
+    50% { color: #fff; } 
+    100% { color: #F8CD0A;  } 
+}
+@keyframes my { 
+    0% { color: #F8CD0A;  } 
+    50% { color: #fff;  }
+    100% { color: #F8CD0A;  } 
+} 
+.item-job {
+       
+    font-size:30px;
+    font-weight:bold;
+    -webkit-animation: my 700ms infinite;
+    -moz-animation: my 700ms infinite; 
+    -o-animation: my 700ms infinite; 
+    animation: my 700ms infinite;
+}
+.introduct p{
+    color: wheat;
+}

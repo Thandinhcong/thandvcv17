@@ -15,16 +15,30 @@
   ],
   "profiles": [
     {
-      "name": "Đinh Công Thản update",
+      "id": 4,
+      "name": "Đinh Công Thản ",
       "email": "Dinhcongthan03@gamil.com",
       "phone": "0523892062",
       "address": "Hưng Hà-Thái Bình",
-      "job": "font-end developer",
+      "job": "Font-end developer",
       "sex": "Nam",
       "Education": "FPT Polytechnic",
       "img": "",
-      "date": "",
-      "id": 4
+      "date": ""
+    },
+    {
+      "name": "Thản trần",
+      "email": "Dinhcongthan2003333@gmail.com",
+      "phone": "0523892062",
+      "address": "Hưng hà",
+      "job": "fullsatck developer",
+      "sex": "nữ",
+      "Education": "FPT polytechnic",
+      "date": "213131",
+      "gallery": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676607381/ES6/kykzcvajetowxicmjozz.jpg"
+      ],
+      "id": 6
     }
   ],
   "skills": [
@@ -51,6 +65,26 @@
     {
       "name": "My SQL",
       "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "Dự án 1",
+      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL",
+      "links": "https://github.com/Thandinhcong/D-n-1",
+      "id": 2
+    },
+    {
+      "name": "Dự án 1",
+      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL",
+      "links": "https://github.com/Thandinhcong/D-n-1",
+      "id": 3
+    },
+    {
+      "name": "Dự án Mẫu",
+      "description": "HAhahahaaa",
+      "link": "Dự án Mẫu",
+      "id": 4
     }
   ]
 }
