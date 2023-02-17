@@ -5,6 +5,7 @@ import { render, router } from "./lib";
 import AdminAddprofile from "./pages/admin/addprofile";
 import AdminEditProfile from "./pages/admin/Editprofile";
 import AdminAddProducts from "./pages/admin/products/add-products";
+import AdminEditProduct from "./pages/admin/products/edit-products";
 import AdminProducts from "./pages/admin/products/products";
 import AdminProfile from "./pages/admin/profiles";
 import Adminprojects from "./pages/admin/projects";
@@ -23,6 +24,7 @@ router.on("/admin/projects", () => render(Adminprojects, app));
 //products
 router.on("/admin/products", () => render(AdminProducts, app));
 router.on("/admin/products/add", () => render(AdminAddProducts, app));
+router.on("/admin/products/:id/edit", ({ data }) => render(() => AdminEditProduct(data), app));
 //skills
 router.on("/admin/skills", () => render(AdminSkillFage, app));
 router.on("/admin/skills/add", () => render(AdminAddSkillFage, app));

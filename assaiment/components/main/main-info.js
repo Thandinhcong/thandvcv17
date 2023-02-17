@@ -1,5 +1,4 @@
 import { useEffect, useState } from "../../lib";
-import ProjectGallery from "../projectGalery";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../src/style.css";
 const MainProfile = () => {

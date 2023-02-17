@@ -19,14 +19,14 @@
       "email": "Dinhcongthan2003@gmail.com",
       "phone": "0523892062",
       "address": "Hưng hà-Thái Bình",
-      "job": "Fullsatck developer",
+      "job": "Fullsatck Web developer",
       "sex": "Nam",
       "Education": "FPT polytechnic",
       "date": "09-06-2003",
       "gallery": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676613944/ES6/vesb3pbdbysb7fodbexu.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676615349/ES6/af8xfgfubo8do2jzkn2y.jpg"
       ],
-      "id": 5
+      "id": 6
     }
   ],
   "skills": [
@@ -57,22 +57,26 @@
   ],
   "products": [
     {
-      "name": "Dự án 1",
-      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL",
+      "id": 3,
+      "name": "Dự án 1 update",
       "links": "https://github.com/Thandinhcong/D-n-1",
-      "id": 2
-    },
-    {
-      "name": "Dự án 1",
-      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL",
-      "links": "https://github.com/Thandinhcong/D-n-1",
-      "id": 3
+      "image": {},
+      "description": "Dự án 1 được code bởi :PHP ,javasrcipt,My SQL"
     },
     {
       "name": "Dự án Mẫu",
       "description": "HAhahahaaa",
       "link": "Dự án Mẫu",
       "id": 4
+    },
+    {
+      "name": "Dự án Mẫu",
+      "description": "HAhahahaaa",
+      "link": "Dự án Mẫu",
+      "image": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676633337/ES6/dg9qbxbjwjoesfcjlana.png"
+      ],
+      "id": 6
     }
   ]
 }
