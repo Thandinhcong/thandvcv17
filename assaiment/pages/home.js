@@ -8,6 +8,7 @@ import ListLenguage from "../components/main/Lenguage";
 import ListProducts from "../components/main/ListProducts";
 import ListEdu from "../components/main/education";
 import ListFooter from "../components/footer/ListFooter";
+import ListProject from "../components/main/ListProjects";
 const HomeFage = () => {
     return `
    <div class="container container-fluid bg-dark">
@@ -21,13 +22,13 @@ const HomeFage = () => {
    ${SkillsFageList()}
    ${ListLenguage()}
    ${ListEdu()}
-   ${ListProducts()}
+   ${ListProducts()};
+   ${ListProject()}
    </main>
    <footer>
    ${ListFooter()}
    </footer>
    </div>
-
     `;
 }
 export default HomeFage;
