@@ -7,7 +7,7 @@ const AdminEditProfile = ({ id }) => {
     getprofile(id)
       .then(({ data }) => setProfiles(data))
       .catch((error) => console.log(error))
-  }, [])
+  }, {})
   useEffect(() => {
     const form = document.getElementById("form-edit");
     const name = document.getElementById("profile-name");

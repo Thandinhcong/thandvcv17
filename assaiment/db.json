@@ -13,7 +13,7 @@
       "id": 2
     }
   ],
-  "profiles": [
+  "profiles": 
     {
       "name": "Đinh Công Thản ",
       "email": "Dinhcongthan2003@gmail.com",
@@ -28,7 +28,7 @@
       ],
       "id": 7
     }
-  ],
+  ,
   "skills": [
     {
       "name": "HTML 5 & CCS3 ",
