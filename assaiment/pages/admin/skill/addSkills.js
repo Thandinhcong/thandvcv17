@@ -1,3 +1,4 @@
+import axios from "axios";
 import { router, useEffect } from "../../../lib";
 
 const AdminAddSkillFage = () => {
@@ -9,13 +10,7 @@ const AdminAddSkillFage = () => {
             const NewSkills = {
                 name: skillsname.value,
             }
-            fetch("http://localhost:3000/skills", {
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json",
-                },
-                body: JSON.stringify(NewSkills)
-            })
+            axios.post("http://localhost:3000/skills", NewSkills)
                 .then(() => router.navigate("/admin/skills"))
         })
 

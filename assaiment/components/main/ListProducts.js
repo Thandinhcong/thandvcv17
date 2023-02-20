@@ -18,10 +18,9 @@ const ListProducts = () => {
       <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 product-item border">
        <div class="cart">
        <img src="${product.image}" class="cart-img-top" style=""  alt="" >
-       <h5 class="product-item-title
-        cart-title">${product.name}</h5>
+       <h5 class="product-item-title cart-title">${product.name}</h5>
        <p class="cart-text">${product.description}</p>
-       <a href="${product.links}">View a GitHub</a>
+       <a href="${product.links}">Xem chi tiết</a>
      </div>
      </div>
      `).join("")

@@ -11,6 +11,7 @@ import AdminProducts from "./pages/admin/products/products";
 import AdminProfile from "./pages/admin/profiles";
 import Adminprojects from "./pages/admin/projects";
 import AdminAddSkillFage from "./pages/admin/skill/addSkills";
+import AdminEditSkill from "./pages/admin/skill/edit-skills";
 import AdminSkillFage from "./pages/admin/skill/listSkills";
 import HomeFage from "./pages/home";
 import NotFound from "./pages/not-found";
@@ -32,5 +33,7 @@ router.on("/admin/products/:id/edit", ({ data }) => render(() => AdminEditProduc
 //skills
 router.on("/admin/skills", () => render(AdminSkillFage, app));
 router.on("/admin/skills/add", () => render(AdminAddSkillFage, app));
+router.on("/admin/skills/:id/edit", ({ data }) => render(() => AdminEditSkill(data), app));
+//
 router.notFound(() => render(NotFound, app));
 router.resolve();

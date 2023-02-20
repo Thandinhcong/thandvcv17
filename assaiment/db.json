@@ -19,28 +19,24 @@
       "email": "Dinhcongthan2003@gmail.com",
       "phone": "0523892062",
       "address": "Hưng hà-Thái Bình",
-      "job": "Font-End Web developer",
+      "job": "Font-End Developer",
       "sex": "Nam",
       "Education": "FPT polytechnic",
       "date": "09-06-2003",
       "gallery": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676615349/ES6/af8xfgfubo8do2jzkn2y.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676861383/ES6/pndcdtpryeblrs83tkpz.jpg"
       ],
-      "id": 6
+      "id": 7
     }
   ],
   "skills": [
     {
-      "name": "HTML 5 & CCS3",
+      "name": "HTML 5 & CCS3 ",
       "id": 3
     },
     {
       "name": "Javascript",
       "id": 4
-    },
-    {
-      "name": "PHP",
-      "id": 5
     },
     {
       "name": "Reactjs",
@@ -53,6 +49,10 @@
     {
       "name": "My SQL",
       "id": 8
+    },
+    {
+      "name": "Node js",
+      "id": 9
     }
   ],
   "products": [
@@ -82,6 +82,15 @@
         "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642691/ES6/yuezcbvykp6bzeda5h9b.jpg"
       ],
       "id": 5
+    },
+    {
+      "name": "DỰ ÁN 2",
+      "description": "HAhahahaaa",
+      "link": "DỰ ÁN 2",
+      "image": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676861664/ES6/pgsxkzlvhbtsvtf6ia7g.jpg"
+      ],
+      "id": 6
     }
   ]
 }

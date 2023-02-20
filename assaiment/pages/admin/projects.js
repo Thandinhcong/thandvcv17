@@ -1,11 +1,11 @@
+import axios from "axios";
 import { useEffect, useState } from "../../lib"
 
 const Adminprojects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/projects")
-      .then((response) => response.json())
-      .then((data) => setProjects(data))
+    axios.get("http://localhost:3000/projects")
+      .then(({ data }) => setProjects(data))
   }, [])
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-remove");
