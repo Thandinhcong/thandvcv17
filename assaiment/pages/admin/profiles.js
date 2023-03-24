@@ -2,12 +2,12 @@ import { useEffect, useState } from "../../lib";
 import axios from "axios";
 import { getProfiles, deleteprofile } from "../../api/profiles";
 const AdminProfile = () => {
-  const [profiles, setProfile] = useState({})
+  const [profiles, setProfile] = useState([])
   useEffect(() => {
     getProfiles()
       .then(({ data }) => setProfile(data))
       .catch((error) => console.log(error))
-  }, {})
+  }, [])
   useEffect(() => {
     const btns = document.querySelectorAll(".btn-remove")
     for (let btn of btns) {
@@ -19,7 +19,7 @@ const AdminProfile = () => {
           deleteprofile(id)
             .then(() => {
               const NewProfiles = profiles.filter((profile) => profile.id != id)
-              setProfile(NewProfiles)
+              setProfile(NewProfiles);
             })
             .catch((error) => console.log(error));
         }
@@ -32,6 +32,7 @@ const AdminProfile = () => {
     <table class="table table-bordered">
       <thead>
         <tr>
+        <td></td>
           <td>Name</td>
           <td>Email</td>
           <td>Number phone</td>
@@ -46,19 +47,25 @@ const AdminProfile = () => {
       </thead>
       <tbody>
       <tr>
-          <td>${profiles.name}</td>
-          <td>${profiles.email}</td>
-          <td>${profiles.phone}</td>
-          <td>${profiles.address}</td>
-          <td>${profiles.job}</td>
-          <td>${profiles.sex}</td>
-          <td>${profiles.Education}</td>
-          <td><img src="${profiles.gallery?.[0]}" style="width:200px;" /></td>
-          <td>${profiles.date}</td>
+         ${profiles.map((profile, index) => {
+    return `
+          <td>${index + 1}</td>
+          <td>${profile.name}</td>
+          <td>${profile.email}</td>
+          <td>${profile.phone}</td>
+          <td>${profile.address}</td>
+          <td>${profile.job}</td>
+          <td>${profile.sex}</td>
+          <td>${profile.Education}</td>
+          <td><img src="${profile.img}" style="width:200px;" /></td>
+          <td>${profile.date}</td>
           <td>
-            <button class="btn btn-remove btn-primary" data-id="${profiles.id}">Remove</button>
-            <a href="/admin/profiles/${profiles.id}/edit">Sửa</a>
+            <button class="btn btn-remove btn-primary" data-id="${profile.id}">Remove</button>
+            <a href="/admin/profiles/${profile.id}/edit">Sửa</a>
           </td>
+          
+          `;
+  })}
     </tr>
       </tbody >
     </table >

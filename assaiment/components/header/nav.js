@@ -1,5 +1,5 @@
 import menus from "../../data";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "../../src/style.css"
 const Nav = () => {
     return `
     <ul class="">

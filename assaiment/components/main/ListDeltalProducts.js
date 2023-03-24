@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "../../lib";
 
 const DeltailProducts = () => {
-    const [products, setProducts] = useState([]);
+    // const [products, setProducts] = useState([]);
     useEffect(() => {
         axios.get()
     }, []);

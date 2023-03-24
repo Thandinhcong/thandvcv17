@@ -10,11 +10,12 @@ const AdminAddprofile = () => {
         const address = document.getElementById("profile-address");
         const job = document.getElementById("profile-job");
         const sex = document.getElementById("profile-sex");
-        const Education = document.getElementById("profile-education");
+        const education = document.getElementById("profile-education");
         const date = document.getElementById("profile-date")
         const img = document.getElementById("profile-img")
 
         form.addEventListener("submit", async function (e) {
+
             e.preventDefault();
             const urls = await upLoadFile(img.files);
             const newProfiles = {
@@ -24,15 +25,15 @@ const AdminAddprofile = () => {
                 address: address.value,
                 job: job.value,
                 sex: sex.value,
-                Education: Education.value,
+                Education: education.value,
                 date: date.value,
-                gallery: urls,
+                img: urls,
             }
             addprofile(newProfiles)
-                .then(() => { router.navigate("/admin/profiles") })
+                .then(() => router.navigate("/admin/profiles"))
                 .catch((error) => console.log(error))
         })
-    }, [])
+    })
 
     const upLoadFile = async (files) => {
         if (files) {
@@ -58,9 +59,9 @@ const AdminAddprofile = () => {
         }
     }
     return `
-<div class="add-profile">
-    <h1>Thêm thông tin người dùng</h1>
-    <form action="" id="form-add">
+
+<h1>Thêm thông tin người dùng</h1>
+<form action="" id="form-add">
     <div class="form-group">
         <label for="" class="form-label">Họ tên</label>
         <input type="text" placeholder="Nhập họ tên" id="profile-name" class="form-control">
@@ -75,14 +76,14 @@ const AdminAddprofile = () => {
         <label for="" class="form-label">Gioi tính</label>
         <input type="text" placeholder="Nhập giói tính" id="profile-sex" class="form-control">
         <label for="" class="form-label">Trường học</label>
-        <input type="text" placeholder="Nhập Trường học" id="profile-education"      class="form-control">
+        <input type="text" placeholder="Nhập Trường học" id="profile-education" class="form-control">
         <label for="" class="form-label">image</label>
         <input type="file" id="profile-img" multiple class="form-control">
         <label for="" class="form-label">Ngày sinh</label>
-        <input type="" id="profile-date"  class="form-control">
+        <input type="date" id="profile-date"  class="form-control">
     </div>
       <button type='submit' class="btn btn-primary">Thêm</button>
-    </form>
-  </div>`;
+</form>`
+        ;
 }
 export default AdminAddprofile;

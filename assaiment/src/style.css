@@ -68,9 +68,9 @@
     margin-left: 120px;
 }
 .product img{
-    padding: 5px;
-    width: 200px;
-    height: 200px;
+ width: 100%;
+ margin: 10px 0;
+ height: 200px;
 }
 .product h5{
     color:wheat;
@@ -109,3 +109,32 @@
 .edu h4{
 color: #fff;
 }
+.nav{
+    font-size: 20px;
+}
+.nav:hover{
+color: wheat;
+}
+/* info */
+.info-img{
+    margin-right: 40px;
+}
+.frofile-img img{
+    border: 40%;
+}
+.frofile-img {
+    display: inline-block; /* Để hộp chứa hình ảnh có kích thước bằng kích thước của hình ảnh */
+    animation: bounce 5s infinite; /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0); /* Không di chuyển hình ảnh */
+    }
+    50% {
+      transform: translateY(-10px); /* Di chuyển hình ảnh lên 10px */
+    }
+    100% {
+      transform: translateY(0); /* Trở về vị trí ban đầu */
+    }
+  }

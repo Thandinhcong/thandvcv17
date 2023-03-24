@@ -13,22 +13,22 @@
       "id": 2
     }
   ],
-  "profiles": 
+  "profiles": [
     {
       "name": "Đinh Công Thản ",
       "email": "Dinhcongthan2003@gmail.com",
       "phone": "0523892062",
       "address": "Hưng hà-Thái Bình",
-      "job": "Font-End Developer",
+      "job": "Front-End Developer",
       "sex": "Nam",
       "Education": "FPT polytechnic",
-      "date": "09-06-2003",
-      "gallery": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676861383/ES6/pndcdtpryeblrs83tkpz.jpg"
+      "date": "2003-06-09",
+      "img": [
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679590723/ES6/vklalu4gggpes5nvjbp4.jpg"
       ],
-      "id": 7
+      "id": 3
     }
-  ,
+  ],
   "skills": [
     {
       "name": "HTML 5 & CCS3 ",
@@ -57,22 +57,22 @@
   ],
   "products": [
     {
+      "id": 3,
       "name": "Dự án Mẫu",
-      "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript",
-      "link": "Dự án Mẫu",
+      "links": "",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642247/ES6/wpneoobiommn84wqx4jp.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592310/ES6/z87zqu3nhi9x4q6dvhd5.png"
       ],
-      "id": 3
+      "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript"
     },
     {
+      "id": 4,
       "name": "Xây dựng CV",
-      "description": "Dự án được tạo bởi vanillajs bootstrap",
-      "link": "https://github.com/Thandinhcong/EMACSCript-6/tree/main/assaiment",
+      "links": "",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642618/ES6/slpkqdiso8qtdg1dv17h.png"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592322/ES6/atm1uc7xyql8e2tr4u9n.png"
       ],
-      "id": 4
+      "description": "Dự án được tạo bởi vanillajs bootstrap"
     },
     {
       "name": "Dự án 1 ",
@@ -84,11 +84,11 @@
       "id": 5
     },
     {
-      "name": "DỰ ÁN 2",
+      "name": "iPhone 12 Promax",
       "description": "HAhahahaaa",
-      "link": "DỰ ÁN 2",
+      "link": "",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676861664/ES6/pgsxkzlvhbtsvtf6ia7g.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592322/ES6/atm1uc7xyql8e2tr4u9n.png"
       ],
       "id": 6
     }

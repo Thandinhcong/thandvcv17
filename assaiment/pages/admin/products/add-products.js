@@ -15,12 +15,13 @@ const AdminAddProducts = () => {
             const NewProducts = {
                 name: ProductName.value,
                 description: ProductDes.value,
-                link: ProductLink.value,
+                links: ProductLink.textContent,
                 image: urls,
             }
             addProduct(NewProducts)
                 .then(() => {
                     router.navigate("/admin/products")
+                    alert("Thêm thành công");
                 })
                 .catch((error) => console.log(error));
         })
@@ -61,6 +62,8 @@ const AdminAddProducts = () => {
       <input type="text" placeholder="Nhập mô tả " id="product-des" class="form-control">
       <label for="" class="form-label">Link</label>
       <input type="text" placeholder="" id="product-link" class="form-control">
+      <a href="#" id="link-preview">(Xem trước)</a>
+
       </div>
       <button class="btn btn-primary" type='submit'>Thêm</button>
     </form>
