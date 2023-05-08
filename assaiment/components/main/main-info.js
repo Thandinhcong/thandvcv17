@@ -15,6 +15,11 @@ const MainProfile = () => {
         <div class="profile-introduce fs-3 text-primary " style="margin-top:30px">
             <p class="product-name text-sm-center fs-1">Xin chào các bạn <br> Tôi tên là :<br> <label class="lable-name">${profiles.name}</label> </p>
             <p class="ms-4 fs-2">Tôi là một :<lable class="item-job"> ${profiles.job}</lable></p>
+            <div class="bg-dark icons">
+            <span class="material-symbols-outlined">person</span>
+            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">settings_phone</span>
+            </div>
         </div>
          <div class="frofile-img ">
          <img style="margin-right="30px" src="${profiles.img}" class="info-img rounded-circle" width="300px"/>

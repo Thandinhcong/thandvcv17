@@ -5,7 +5,10 @@ const AdminProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
         getProducts()
-            .then(({ data }) => setProducts(data))
+            .then(({ data }) => {
+                setProducts(data)
+                console.log("data :", typeof data);
+            })
             .catch((error) => console.log(error))
     }, [])
     useEffect(() => {

@@ -1,6 +1,6 @@
 import { router, useEffect } from "../../lib";
-import axios from "axios";
 import { addprofile } from "../../api/profiles";
+import axios from "axios";
 const AdminAddprofile = () => {
     useEffect(() => {
         const form = document.getElementById("form-add");
@@ -15,7 +15,6 @@ const AdminAddprofile = () => {
         const img = document.getElementById("profile-img")
 
         form.addEventListener("submit", async function (e) {
-
             e.preventDefault();
             const urls = await upLoadFile(img.files);
             const newProfiles = {

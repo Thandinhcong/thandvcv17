@@ -138,3 +138,11 @@ color: wheat;
       transform: translateY(0); /* Trở về vị trí ban đầu */
     }
   }
+.icons span{
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+}
+.icons{
+    margin-left: 140px;
+}

@@ -1,7 +1,7 @@
-import axios from "axios";
 import { router, useState, useEffect } from "../../lib";
 import { getprofile, updateprofile } from "../../api/profiles";
 import * as yup from "yup";
+import axios from "axios";
 
 const AdminEditProfile = ({ id }) => {
   const [profile, setProfile] = useState({});
