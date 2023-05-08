@@ -1,7 +1,8 @@
-.lable-name{
+.lable-name {
     font-size: 30px;
     color: wheat;
 }
+
 .lable-name {
     overflow: hidden;
     white-space: nowrap;
@@ -10,139 +11,208 @@
     font-weight: 700;
     animation: typing 8s steps(40) infinite, blinking 1s infinite;
 }
-.item-job{
-    color: wheat;
-}
-@keyframes typing {
-    0%, 100% {
-      width: 0;
-    }
-  
-    50%, 90% {
-      width: 100%;
-    }
-  }
-  
-@keyframes blinking {
-    0%, 100% {
-      border-color: transparent;
-    }
-  
-    50% {
-      border-color: #fff;
-    }
-}
-@-webkit-keyframes my {
-    0% { color: #F8CD0A; } 
-    50% { color: #fff;  } 
-    100% { color: #F8CD0A;  } 
-}
-@-moz-keyframes my { 
-    0% { color: #F8CD0A;  } 
-    50% { color: #fff;  }
-    100% { color: #F8CD0A;  } 
-}
-@-o-keyframes my { 
-    0% { color: #F8CD0A; } 
-    50% { color: #fff; } 
-    100% { color: #F8CD0A;  } 
-}
-@keyframes my { 
-    0% { color: #F8CD0A;  } 
-    50% { color: #fff;  }
-    100% { color: #F8CD0A;  } 
-} 
+
 .item-job {
-       
-    font-size:30px;
-    font-weight:bold;
+    color: wheat;
+
+}
+
+@keyframes typing {
+
+    0%,
+    100% {
+        width: 0;
+    }
+
+    50%,
+    90% {
+        width: 100%;
+    }
+}
+
+@keyframes blinking {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+@-webkit-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-moz-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@-o-keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+@keyframes my {
+    0% {
+        color: #F8CD0A;
+    }
+
+    50% {
+        color: #fff;
+    }
+
+    100% {
+        color: #F8CD0A;
+    }
+}
+
+.item-job {
+
+    font-size: 30px;
+    font-weight: bold;
     -webkit-animation: my 700ms infinite;
-    -moz-animation: my 700ms infinite; 
-    -o-animation: my 700ms infinite; 
+    -moz-animation: my 700ms infinite;
+    -o-animation: my 700ms infinite;
     animation: my 700ms infinite;
 }
 
-.product{
-    border:1px #fff ;
+.product {
+    border: 1px #fff;
     grid-gap: 30px;
     margin-left: 120px;
 }
-.product img{
- width: 100%;
- margin: 10px 0;
- height: 200px;
+
+.product img {
+    width: 100%;
+    margin: 10px 0;
+    height: 200px;
 }
-.product h5{
-    color:wheat;
+
+.product h5 {
+    color: wheat;
     font-size: 30px;
     text-align: center;
 }
-.product p{
+
+.product p {
     color: white;
 }
-.product a{
+
+.product a {
     text-decoration: none;
     font-size: 20px;
     color: rgb(211, 170, 170);
     text-align: center;
 }
-.product a:hover{
+
+.product a:hover {
     color: red;
 }
-.footer-product{
+
+.footer-product {
     color: #fff;
     font-size: 20px;
     text-align: center;
     padding: 20px;
-    border-top:solid 1px #fff;
+    border-top: solid 1px #fff;
 }
-.Duan{
+
+.Duan {
     color: white;
 }
-.Chi-tiet{
+
+.Chi-tiet {
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.Duan h2{
+
+.Duan h2 {
     color: rgb(34, 34, 245);
 }
-.edu h4{
-color: #fff;
+
+.edu h4 {
+    color: #fff;
 }
-.nav{
+
+.nav {
     font-size: 20px;
 }
-.nav:hover{
-color: wheat;
+
+.nav:hover {
+    color: wheat;
 }
+
 /* info */
-.info-img{
+.info-img {
     margin-right: 40px;
 }
-.frofile-img img{
+
+.frofile-img img {
     border: 40%;
 }
+
 .frofile-img {
-    display: inline-block; /* Để hộp chứa hình ảnh có kích thước bằng kích thước của hình ảnh */
-    animation: bounce 5s infinite; /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
-  }
-  
-  @keyframes bounce {
+    display: inline-block;
+    /* Để hộp chứa hình ảnh có kích thước bằng kích thước của hình ảnh */
+    animation: bounce 5s infinite;
+    /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
+}
+
+@keyframes bounce {
     0% {
-      transform: translateY(0); /* Không di chuyển hình ảnh */
+        transform: translateY(0);
+        /* Không di chuyển hình ảnh */
     }
+
     50% {
-      transform: translateY(-10px); /* Di chuyển hình ảnh lên 10px */
+        transform: translateY(-10px);
+        /* Di chuyển hình ảnh lên 10px */
     }
+
     100% {
-      transform: translateY(0); /* Trở về vị trí ban đầu */
+        transform: translateY(0);
+        /* Trở về vị trí ban đầu */
     }
-  }
-.icons span{
+}
+
+.icons span {
     font-size: 50px;
     color: white;
     margin-left: 20px;
 }
-.icons{
+
+.icons {
     margin-left: 140px;
 }
