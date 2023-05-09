@@ -110,14 +110,17 @@
 
 .product {
     border: 1px #fff;
-    grid-gap: 30px;
-    margin-left: 120px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .product img {
     width: 100%;
     margin: 10px 0;
     height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .product h5 {
@@ -133,12 +136,7 @@
 .product a {
     text-decoration: none;
     font-size: 20px;
-    color: rgb(211, 170, 170);
     text-align: center;
-}
-
-.product a:hover {
-    color: red;
 }
 
 .footer-product {

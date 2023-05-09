@@ -10,7 +10,7 @@ import ListFooter from "../footer/ListFooter";
 import ListProject from "./ListProjects";
 const ListHomeFage = () => {
     return `
-   <div class="container container-fluid bg-dark">
+   <div class="container container-xxl bg-dark">
    <header>
    ${header()}
    </header>

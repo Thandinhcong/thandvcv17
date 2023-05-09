@@ -22,7 +22,7 @@
       "job": "Front-End Developer",
       "sex": "Nam",
       "Education": "FPT polytechnic",
-      "date": "",
+      "date": "09-06-2003",
       "img": [
         "https://res.cloudinary.com/dxzlnojyv/image/upload/v1680256993/ES6/pbwh2ucavoedoax8fmkz.jpg"
       ],
@@ -59,9 +59,9 @@
     {
       "id": 3,
       "name": "Dự án Mẫu",
-      "links": "",
+      "links": "https://github.com/Thandinhcong/duanmau-php",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592310/ES6/z87zqu3nhi9x4q6dvhd5.png"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1683624972/ES6/t7njdxkoxryqcao6gi1m.jpg"
       ],
       "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript"
     },
@@ -72,23 +72,23 @@
       "image": [
         "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592322/ES6/atm1uc7xyql8e2tr4u9n.png"
       ],
-      "description": "Dự án được tạo bởi vanillajs bootstrap"
+      "description": "Dự án đượcsử dụng công nghệ như : vanillajs, bootstrap5, html5,css3,"
     },
     {
       "name": "Dự án 1 ",
       "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript,Bootstrap",
       "link": "https://github.com/Thandinhcong/D-n-1",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1676642691/ES6/yuezcbvykp6bzeda5h9b.jpg"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1683624972/ES6/t7njdxkoxryqcao6gi1m.jpg"
       ],
       "id": 5
     },
     {
-      "name": "iPhone 12 Promax",
-      "description": "HAhahahaaa",
-      "link": "",
+      "name": "React-TypeScript",
+      "description": "Dự án sử dụng ngôn ngữ lập trình react typescription ,HTML 5, css3,boostrap5,nodejs",
+      "links": "https://github.com/Thandinhcong/Typescript-React",
       "image": [
-        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1679592322/ES6/atm1uc7xyql8e2tr4u9n.png"
+        "https://res.cloudinary.com/dxzlnojyv/image/upload/v1683625576/ES6/mha4ewznblq3yqn7ch4r.avif"
       ],
       "id": 6
     }

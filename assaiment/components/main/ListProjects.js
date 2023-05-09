@@ -1,7 +1,7 @@
 import "../../src/style.css";
 const ListProject = () => {
     return `
-    <div class="Duan container d-flex">
+    <div class="Duan container-xxl d-flex">
             <div class="flex-fill">
                 <h2 class="">Dự án</h2>
                  <p>15/02/2022-Hiện tại</p>   

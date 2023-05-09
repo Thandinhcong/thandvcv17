@@ -12,16 +12,14 @@ const ListProducts = () => {
 
   return `
     <h2 class="text-primary ms-3">Sản phẩm</h2>
-    <div class="container p-5">
-    <div class="product row  ">
+    <div class="container-xxl mt-5">
+    <div class="product row  row-cols-3">
             ${products.map((product) => `
-      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 product-item border">
-       <div class="cart">
+       <div class="cart col-4">
        <img src="${product.image}" class="cart-img-top" style=""  alt="" >
        <h5 class="product-item-title cart-title">${product.name}</h5>
        <p class="cart-text">${product.description}</p>
-       <a href="${product.links}">Xem chi tiết</a>
-     </div>
+       <a href="${product.links}" class="btn btn-primary mb-2 mb-4 ">Xem chi tiết</a>
      </div>
      `).join("")
     }
