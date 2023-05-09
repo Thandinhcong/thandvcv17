@@ -16,7 +16,7 @@ const ListProducts = () => {
     <div class="product row  row-cols-3">
             ${products.map((product) => `
        <div class="cart col-4">
-       <img src="${product.image}" class="cart-img-top" style=""  alt="" >
+     <a href="${product.links}">  <img src="${product.image}" class="cart-img-top" style=""  alt="" ></a>
        <h5 class="product-item-title cart-title">${product.name}</h5>
        <p class="cart-text">${product.description}</p>
        <a href="${product.links}" class="btn btn-primary mb-2 mb-4 ">Xem chi tiết</a>
