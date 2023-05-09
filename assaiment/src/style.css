@@ -109,14 +109,20 @@
 }
 
 .product {
-    border: 1px #fff;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    gap: 50px;
+}
+
+.cart {
+    box-shadow: rgb(225, 228, 230) 0px 20px 30px -10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 330px;
 }
 
 .product img {
-    width: 100%;
+    width: 300px;
     margin: 10px 0;
     height: 200px;
     border-radius: 10px;
