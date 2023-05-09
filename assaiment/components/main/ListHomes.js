@@ -1,5 +1,4 @@
 import header from "../header/header";
-import "bootstrap/dist/css/bootstrap.min.css";
 import MainProfile from "./main-info";
 import introduceInfo from "./introduce";
 import ContactFage from "../../pages/contacts";

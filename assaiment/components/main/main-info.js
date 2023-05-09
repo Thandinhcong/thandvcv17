@@ -3,7 +3,7 @@ import "../../src/style.css";
 const MainProfile = () => {
     const [profiles, setProfile] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/profiles")
+        fetch("https://data-git-main-thandinhcong.vercel.app/profiles")
             .then((response) => response.json())
             .then((data) => setProfile(data))
     }, {})

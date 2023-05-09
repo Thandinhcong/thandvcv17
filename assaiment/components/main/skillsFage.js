@@ -3,7 +3,7 @@ import { useEffect, useState } from "../../lib";
 const SkillsFageList = () => {
     const [skills, setSkills] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:3000/skills")
+        fetch("https://data-git-main-thandinhcong.vercel.app/skills")
             .then((response) => response.json())
             .then((data) => setSkills(data))
     }, [])

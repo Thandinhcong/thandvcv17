@@ -5,7 +5,7 @@ import { useEffect, useState } from "../lib";
 const ContactFage = () => {
     const [profiles, setProfiles] = useState([])
     useEffect(() => {
-        fetch("http://localhost:3000/profiles")
+        fetch("https://data-git-main-thandinhcong.vercel.app/profiles")
             .then((response) => response.json())
             .then((data) => setProfiles(data))
     }, [])
