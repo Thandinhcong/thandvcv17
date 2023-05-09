@@ -220,3 +220,18 @@
 .icons {
     margin-left: 140px;
 }
+
+.product-item-title:hover {
+
+    --h: 1.2em;
+    /* the height */
+
+    line-height: var(--h);
+    color: white;
+    text-shadow:
+        0 calc(-1*var(--_t, 0em)) #000,
+        0 calc(var(--h) - var(--_t, 0em)) #1095c1;
+    overflow: hidden;
+    transition: .3s;
+
+}
