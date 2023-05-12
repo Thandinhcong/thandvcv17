@@ -132,15 +132,40 @@
 .skill-item {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20px;
 }
 
 .product img {
     width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .product {
+    color: white;
+}
+
+.cart {
+    margin-bottom: 15px;
     display: grid;
     grid-template-columns: 1fr;
+    box-shadow: rgb(225, 228, 230) 0px 20px 30px -10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: 330px;
+}
+
+.Duan {
+    color: #d8c5c5;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    color: lightgray;
+    text-align: center;
+    margin: 10px 0;
+    border-top: 1px solid;
 }
 
 @media(min-width:1024px) {
@@ -256,6 +281,8 @@
 
     .Duan {
         color: white;
+        display: flex;
+        flex-direction: row;
     }
 
     .Chi-tiet {
@@ -277,6 +304,10 @@
 
     .nav:hover {
         color: wheat;
+    }
+
+    .footer {
+        border-top: none;
     }
 
     /* info */
