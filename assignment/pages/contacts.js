@@ -20,7 +20,7 @@ const ContactFage = () => {
                 <p>Address: ${profile.address}</p>
                 <p>Phone number : ${profile.phone}</p>
             </div>
-           <div class="flex-fill">        
+           <div class="contact-item flex-fill">        
                 <p>Gender : ${profile.sex}</p>
                 <p>Facebook : Dinhcongthan.official</p>
                 <p>Date of bith : ${profile.date}</p>

@@ -1,22 +1,3 @@
-.lable-name {
-    font-size: 30px;
-    color: wheat;
-}
-
-.lable-name {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.25rem solid #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    animation: typing 8s steps(40) infinite, blinking 1s infinite;
-}
-
-.item-job {
-    color: wheat;
-
-}
-
 @keyframes typing {
 
     0%,
@@ -98,105 +79,6 @@
     }
 }
 
-.item-job {
-
-    font-size: 30px;
-    font-weight: bold;
-    -webkit-animation: my 700ms infinite;
-    -moz-animation: my 700ms infinite;
-    -o-animation: my 700ms infinite;
-    animation: my 700ms infinite;
-}
-
-.product {
-    border-radius: 10px;
-    margin-bottom: 20px;
-    gap: 50px;
-}
-
-.cart {
-    box-shadow: rgb(225, 228, 230) 0px 20px 30px -10px;
-    border-radius: 10px;
-    border: 1px solid #fff;
-    width: 330px;
-}
-
-.product img {
-    width: 300px;
-    margin: 10px 0;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.product h5 {
-    color: wheat;
-    font-size: 30px;
-    text-align: center;
-}
-
-.product p {
-    color: white;
-}
-
-.product a {
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-}
-
-.footer-product {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px;
-    border-top: solid 1px #fff;
-}
-
-.Duan {
-    color: white;
-}
-
-.Chi-tiet {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.Duan h2 {
-    color: rgb(34, 34, 245);
-}
-
-.edu h4 {
-    color: #fff;
-}
-
-.nav {
-    font-size: 20px;
-}
-
-.nav:hover {
-    color: wheat;
-}
-
-/* info */
-.info-img {
-    margin-right: 40px;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-
-}
-
-.frofile-img img {
-    border: 40%;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.frofile-img {
-    display: inline-block;
-    /* Để hộp chứa hình ảnh có kích thước bằng kích thước của hình ảnh */
-    animation: bounce 5s infinite;
-    /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
-}
-
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -214,30 +96,231 @@
     }
 }
 
-.icons i {
-    font-size: 30px;
-    color: rgb(78, 142, 215);
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+}
+
+.main-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-introduce {
+    text-align: center;
+}
+
+.frofile-img img {
+    margin-top: 10px;
     margin-left: 20px;
-    border: 1px solid rgb(78, 142, 215);
-    padding: 2px;
-    border-radius: 100%;
 }
 
-.icons {
-    margin-left: 100px;
+.contacts-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
-.product-item-title:hover {
+.contact-item {
+    margin-left: 20px;
+}
 
-    --h: 1.2em;
-    /* the height */
+.skill-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-    line-height: var(--h);
-    color: white;
-    text-shadow:
-        0 calc(-1*var(--_t, 0em)) #000,
-        0 calc(var(--h) - var(--_t, 0em)) #1095c1;
-    overflow: hidden;
-    transition: .3s;
+.product img {
+    width: 100%;
+}
 
+.product {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media(min-width:1024px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main-profile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile-introduce {
+        text-align: center;
+    }
+
+    .contacts-item {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .contact-item {
+        margin-left: 20px;
+    }
+
+    .skill-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .product img {
+        width: 100%;
+    }
+
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .lable-name {
+        font-size: 30px;
+        color: wheat;
+    }
+
+    .lable-name {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 0.25rem solid #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        animation: typing 8s steps(40) infinite, blinking 1s infinite;
+    }
+
+    .item-job {
+        color: wheat;
+    }
+
+    .item-job {
+        font-size: 30px;
+        font-weight: bold;
+        -webkit-animation: my 700ms infinite;
+        -moz-animation: my 700ms infinite;
+        -o-animation: my 700ms infinite;
+        animation: my 700ms infinite;
+    }
+
+    .product {
+        border-radius: 10px;
+        margin-bottom: 20px;
+        gap: 50px;
+    }
+
+    .cart {
+        box-shadow: rgb(225, 228, 230) 0px 20px 30px -10px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        width: 330px;
+    }
+
+    .product img {
+        width: 300px;
+        margin: 10px 0;
+        height: 200px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .product h5 {
+        color: wheat;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .product p {
+        color: white;
+    }
+
+    .product a {
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .footer-product {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        border-top: solid 1px #fff;
+    }
+
+    .Duan {
+        color: white;
+    }
+
+    .Chi-tiet {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .Duan h2 {
+        color: rgb(34, 34, 245);
+    }
+
+    .edu h4 {
+        color: #fff;
+    }
+
+    .nav {
+        font-size: 20px;
+    }
+
+    .nav:hover {
+        color: wheat;
+    }
+
+    /* info */
+    .info-img {
+        margin-right: 40px;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+    }
+
+    .frofile-img img {
+        border: 40%;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .frofile-img {
+        display: inline-block;
+        /* Để hộp chứa hình ảnh có kích thước bằng kích thước của hình ảnh */
+        animation: bounce 5s infinite;
+        /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
+    }
+
+
+
+    .icons i {
+        font-size: 30px;
+        color: rgb(78, 142, 215);
+        margin-left: 20px;
+        border: 1px solid rgb(78, 142, 215);
+        padding: 2px;
+        border-radius: 100%;
+    }
+
+
+    .product-item-title:hover {
+        --h: 1.2em;
+        /* the height */
+
+        line-height: var(--h);
+        color: white;
+        text-shadow:
+            0 calc(-1*var(--_t, 0em)) #000,
+            0 calc(var(--h) - var(--_t, 0em)) #1095c1;
+        overflow: hidden;
+        transition: .3s;
+
+    }
 }

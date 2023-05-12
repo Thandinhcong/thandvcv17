@@ -5,7 +5,7 @@ const Nav = () => {
     <ul class="">
         <li class="nav nav-item">
             ${menus.map(
-        (menu) => `<a href="${menu.path}" class="nav nav-link p-4">${menu.name}</a>`)
+        (menu) => `<a href="${menu.path}" class="nav nav-link p-3">${menu.name}</a>`)
             .join("")
         }
         </li>
