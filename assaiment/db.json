@@ -20,7 +20,7 @@
       "phone": "0523892062",
       "address": "Hưng hà-Thái Bình",
       "job": "Front-End Developer",
-      "sex": "Nam",
+      "sex": "Male",
       "Education": "FPT polytechnic",
       "date": "09-06-2003",
       "img": [
@@ -63,7 +63,7 @@
       "image": [
         "https://res.cloudinary.com/dxzlnojyv/image/upload/v1683624972/ES6/t7njdxkoxryqcao6gi1m.jpg"
       ],
-      "description": "Dự án mẫu được tạo bởi các ngôn ngữ như PHP,My SQL, JavaScript"
+      "description": "Sample project built in languages ​​like PHP,My SQL, JavaScript"
     },
     {
       "id": 4,

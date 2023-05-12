@@ -2,12 +2,12 @@ import "../../src/style.css";
 const ListEdu = () => {
     return `   
     <div class="p-3">
-    <h2 class=" text-primary ">Học vấn</h2>
+    <h2 class=" text-primary ">Education</h2>
    <div class="edu text-muted ms-3">
-   <h4>Cao đẳng FPT Polytechnic</h4>
-   <li>Học tập/làm việc cùng với các bạn  để cải thiện các dự án trên lớp và dự án cá nhân</li>
-   <li>Kiến thức nền tảng về PHP(basic),HTML,CSS,JavaScript,React-Typescript(basic),NodeJS(basic),Angular(basic)</li>
-   <li>Nhận thức về ngành phát triển web và các công nghệ mới</li>
+   <h4> FPT Polytechnic college</h4>
+   <li>Study/work together with peers to improve on class projects and personal projects</li>
+   <li>Basic knowledge of PHP(basic),HTML,CSS,JavaScript,React-Typescript(basic),NodeJS(basic),Angular(basic))</li>
+   <li>Awareness of website development industry and new technologies</li>
    </div>
     </div>
 `
