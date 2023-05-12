@@ -120,7 +120,7 @@
     text-align: center;
 }
 
-.frofile-img img {
+.frofile-img {
     margin-top: 15px;
     display: flex;
     justify-content: center;
@@ -129,7 +129,6 @@
 
 .contact-item {
     margin-left: 15px;
-    text-align: center;
 }
 
 .contacts-item {
@@ -200,7 +199,7 @@
     .contacts-item {
         display: flex;
         flex-direction: row;
-        margin: 0;
+
     }
 
     .contact-item {
@@ -219,6 +218,8 @@
     .product {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
     }
 
     .lable-name {
