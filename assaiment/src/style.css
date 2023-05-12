@@ -102,6 +102,13 @@
     }
 }
 
+.nav {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -182,6 +189,11 @@
 }
 
 @media(min-width:1024px) {
+    .nav {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
     .header {
         display: flex;
         flex-direction: row;
