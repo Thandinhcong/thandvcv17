@@ -30,3 +30,13 @@
     font-size: 30px;
     color: rgb(24, 218, 82);
 }
+
+.animate__animated {
+    --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+}

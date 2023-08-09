@@ -17,7 +17,12 @@ const MainProfile = () => {
             <p class="lable-name ">I am ${profiles.name}</p>
             <lable class="fs-2 text-secondary"> ${profiles.job}</lable>
             <div class="icons">
-        <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
             </div>
         </div>
         <div class="frofile-img ">
