@@ -15,19 +15,17 @@ const MainProfile = () => {
         <div class="profile-introduce  text-primary ">
             <h5 class="product-name ">HEY THERE !</h5>
             <p class="lable-name ">I am ${profiles.name}</p>
-            <lable class="item-job"> ${profiles.job}</lable>
-            <div class="bg-dark icons">
+            <lable class="fs-2 text-secondary"> ${profiles.job}</lable>
+            <div class="icons">
+        <a href=""></a>
             </div>
         </div>
-         <div class="frofile-img ">
-         <img src="${profiles.img}" class="info-img " />
-        </div>
-        <div class="contact-me">
-        
+        <div class="frofile-img ">
+            <img src="${profiles.img}" class="info-img " />
         </div>
     `;
     })}
-</div>
+    </div>
 
 `;
 }

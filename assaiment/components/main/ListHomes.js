@@ -9,27 +9,30 @@ import ListEdu from "./education";
 import ListFooter from "../footer/ListFooter";
 import ListProject from "./ListProjects";
 import "./main.css"
+import Loading from "./Loading";
 const ListHomeFage = () => {
     return `
    <div class="">
-   <header>
-   ${header()}
-   </header>
-   <main>
-   ${MainProfile()}
-   <div class="line-loading"></div>
-   ${introduceInfo()}
-   <div class="viewer">
-   ${ContactFage()}
-   ${SkillsFageList()}
-   ${ListLenguage()}
-   </div>
-   ${ListEdu()}
-   ${ListProducts()};
-   ${ListProject()}
+        <header>
+             ${header()}
+        </header>
+    <main>
+        ${MainProfile()}
+             <div class="d-flex align-items-center justify-content-center">
+                ${Loading()}
+             </div>
+            ${introduceInfo()}
+        <div class="viewer">
+            ${ContactFage()}
+            ${SkillsFageList()}
+            ${ListLenguage()}
+         </div>
+        ${ListEdu()}
+        ${ListProducts()};
+        ${ListProject()}
    </main>
    <footer>
-   ${ListFooter()}
+        ${ListFooter()}
    </footer>
    </div>
     `;
