@@ -9,11 +9,11 @@ const SkillsFageList = () => {
     }, [])
 
     return `
-    <div class="product-skill text-primary ps-3 ">
+    <div class="text-primary ">
     <h2>Skills</h2>
-   <div class="skill-item  text-secondary">
+   <div class="  text-dark">
    ${skills.map((skill) => `
-        <p class="pt-3">${skill.name}</p>
+        <p class="">${skill.name}</p>
    `).join("")}
    </div>
     </div>

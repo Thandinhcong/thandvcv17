@@ -1,32 +1,36 @@
-.line-loading {
-    width: 100%;
-    height: 5px;
-    position: relative;
-    margin: 0 auto;
+.viewer {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+
 }
 
-.line-loading:before {
-    content: "";
-    position: absolute;
-    right: auto;
-    left: 0;
-    height: 100%;
-    background-color: var(--primary);
-    animation: lineLoading 1s forwards infinite linear;
+.profile-introduce {
+    margin-top: 70px;
+    margin-left: 50px;
 }
 
-@keyframes lineLoading {
-    0% {
-        right: 100%;
-    }
+.profile-introduce h5 {
+    color: rgb(24, 218, 82);
+    letter-spacing: 2px;
+}
 
-    50% {
-        right: 0;
-        left: 0;
-    }
+.profile-introduce p {
+    color: #0da33c;
+    font-size: 50px;
+}
 
-    100% {
-        right: 0;
-        left: 100%;
-    }
+.frofile-img img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.item-job {
+    font-size: 30px;
+    color: rgb(24, 218, 82);
+}
+
+.info-img {
+    margin-right: 100px;
 }

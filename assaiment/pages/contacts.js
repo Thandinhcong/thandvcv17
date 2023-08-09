@@ -10,22 +10,17 @@ const ContactFage = () => {
             .then((data) => setProfiles(data))
     }, [])
     return `
-    <div class="contact-product text-primary m-3 ">
-        <h2 class="fs-3">Contact</h2>
-        <div class="contacts-item d-flex p-2 ">
-        ${profiles.map((profile) => {
-        return ` <div class="ps-3 flex-fill">
-                <p>Email: ${profile.email}</p>
-                <p>Address: ${profile.address}</p>
-                <p>Phone number: ${profile.phone}</p>
-            </div>
-           <div class="contact-item flex-fill">        
-                <p>Facebook: Dinhcongthan.official</p>
-                <p>Date of bith: ${profile.date}</p>
-                <p>Job : ${profile.job}</p>      
-           </div>`
-
-    })}
+    <div class="contact-product  ">
+        <h2 class=" text-primary ">Contact</h2>
+        <div class="contacts-item">
+        ${profiles.map((profile) => (
+        ` <div class="">
+                <p><img width="30" height="30" src="https://img.icons8.com/bubbles/50/new-post.png" alt="new-post"/> ${profile.email}</p>
+                <p><img width="30" height="30" src="https://img.icons8.com/color/48/order-delivered.png" alt="order-delivered"/> ${profile.address}</p>
+                <p><img width="30" height="30" src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone"/> ${profile.phone}</p>
+                <p><img width="30" height="30" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/> Dinhcongthan.official</p>     
+            </div>`
+    )).join("")}
         </div>
     </div>
     `;

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #fff;
 }
 
 @keyframes typing {
@@ -32,7 +33,7 @@
 
 @-webkit-keyframes my {
     0% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 
     50% {
@@ -40,13 +41,13 @@
     }
 
     100% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 }
 
 @-moz-keyframes my {
     0% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 
     50% {
@@ -54,13 +55,13 @@
     }
 
     100% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 }
 
 @-o-keyframes my {
     0% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 
     50% {
@@ -68,13 +69,13 @@
     }
 
     100% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 }
 
 @keyframes my {
     0% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 
     50% {
@@ -82,7 +83,7 @@
     }
 
     100% {
-        color: #F8CD0A;
+        color: rgb(24, 218, 82);
     }
 }
 
@@ -118,12 +119,6 @@
 .logo {
     text-align: center;
 }
-
-.main-profile {
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 .frofile-img {
@@ -193,10 +188,6 @@
         flex-direction: row;
     }
 
-    .main-profile {
-        display: flex;
-        flex-direction: row;
-    }
 
     .contacts-item {
         display: flex;
@@ -236,11 +227,10 @@
     }
 
     .item-job {
-        color: wheat;
+        color: rgb(24, 218, 82);
     }
 
     .item-job {
-        font-size: 30px;
         font-weight: bold;
         -webkit-animation: my 700ms infinite;
         -moz-animation: my 700ms infinite;

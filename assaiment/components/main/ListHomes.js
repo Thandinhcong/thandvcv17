@@ -19,9 +19,11 @@ const ListHomeFage = () => {
    ${MainProfile()}
    <div class="line-loading"></div>
    ${introduceInfo()}
+   <div class="viewer">
    ${ContactFage()}
    ${SkillsFageList()}
    ${ListLenguage()}
+   </div>
    ${ListEdu()}
    ${ListProducts()};
    ${ListProject()}

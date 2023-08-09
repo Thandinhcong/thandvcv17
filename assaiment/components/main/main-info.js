@@ -12,15 +12,18 @@ const MainProfile = () => {
     <div class="main-profile d-flex justify-content-between">
    ${profiles.map((profiles) => {
         return `
-        <div class="profile-introduce fs-3 text-primary " style="margin-top:30px">
-            <p class="product-name text-sm-center fs-1">Hello everyone <br> My name is :<br> <label class="lable-name">${profiles?.name}</label> </p>
-            <p class="ms-4 fs-2">I'm a :<lable class="item-job"> ${profiles.job}</lable></p>
+        <div class="profile-introduce  text-primary ">
+            <h5 class="product-name ">HEY THERE !</h5>
+            <p class="lable-name ">I am ${profiles.name}</p>
+            <lable class="item-job"> ${profiles.job}</lable>
             <div class="bg-dark icons">
-    
             </div>
         </div>
          <div class="frofile-img ">
-         <img style="margin-right="30px" src="${profiles.img}" class="info-img rounded-circle" width="300px"/>
+         <img src="${profiles.img}" class="info-img " />
+        </div>
+        <div class="contact-me">
+        
         </div>
     `;
     })}
