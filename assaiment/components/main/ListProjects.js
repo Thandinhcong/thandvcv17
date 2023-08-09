@@ -4,12 +4,12 @@ const ListProject = () => {
     <div class="Duan container-xxl d-flex">
             <div class="flex-fill">
                 <h2 class="">Product</h2>
-                 <p>15/02/2022-persent</p>   
+                 <p>15/02/2022-25/2/2022</p>   
             </div>
         <div class="Chi-tiet flex-fill text-muted">
             <h4 class="">MyCv</h4>    
-            <p>Description :Online personal referral site</p>
-            <p>Technology : <lable>HTL5/CSS3,JavaScript,Bootstrap</lable></p>
+            <p>Description: Online personal referral site</p>
+            <p>Technology: <lable>HTL5/CSS3,JavaScript,Bootstrap</lable></p>
             <p>Detail :</p>
             <div>
             <li>Design and decide on the visual layout of the website</li>

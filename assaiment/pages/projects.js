@@ -4,7 +4,7 @@ import ListProducts from "../components/main/ListProducts";
 
 const ProjectPage = () => {
   return `
-  <div class="bg-dark container-xxl">
+  <div class="">
     ${header()}
     ${ListProducts()}
     ${ListFooter()}

@@ -8,14 +8,16 @@ import ListProducts from "./ListProducts";
 import ListEdu from "./education";
 import ListFooter from "../footer/ListFooter";
 import ListProject from "./ListProjects";
+import "./main.css"
 const ListHomeFage = () => {
     return `
-   <div class="container container-xxl bg-dark">
+   <div class="">
    <header>
    ${header()}
    </header>
    <main>
    ${MainProfile()}
+   <div class="line-loading"></div>
    ${introduceInfo()}
    ${ContactFage()}
    ${SkillsFageList()}

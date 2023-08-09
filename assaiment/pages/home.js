@@ -2,7 +2,7 @@
 import ListHomeFage from "../components/main/ListHomes";
 const HomeFage = () => {
     return `
-   <div class="container container-fluid bg-dark">
+   <div class=" container-fluid ">
    ${ListHomeFage()}
 <div/>
     `;

@@ -1,7 +1,7 @@
 import Navigo from "navigo";
-
-const router = new Navigo('/', { linksSelector: 'a', hash: true });
-let effects = [];
+//single page application
+const router = new Navigo('/', { linksSelector: 'a', hash: false });
+let effects = []
 let currentEffectOrder = 0;
 
 let rootComponent = null;

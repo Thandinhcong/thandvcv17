@@ -4,7 +4,7 @@ import header from "../header/header";
 
 const ListContact = () => {
     return `
-<div class="product-contact bg-dark container">
+<div class="product-contact  container-fluid ">
     ${header()}
     ${ContactFage()}
     ${ListFooter()}
