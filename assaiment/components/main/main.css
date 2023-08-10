@@ -104,3 +104,12 @@
         height: 5px;
     }
 }
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #1da8e2;
+}

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: #fff;
+    background-color: #eff4f1;
 }
 
 @keyframes typing {
@@ -333,14 +333,7 @@
         /* Sử dụng animation và keyframes 'bounce', lặp lại vô hạn */
     }
 
-    .icons i {
-        font-size: 30px;
-        color: rgb(78, 142, 215);
-        margin-left: 20px;
-        border: 1px solid rgb(78, 142, 215);
-        padding: 2px;
-        border-radius: 100%;
-    }
+
 
 
     .product-item-title:hover {
