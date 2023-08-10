@@ -1,11 +1,12 @@
 import menus from "../../data";
 import "../../src/style.css"
+import "./Header.css"
 const Nav = () => {
     return `
     <ul class="">
-        <li class="nav ">
+        <li class="tabs ">
             ${menus.map(
-        (menu) => `<a href="${menu.path}" class="nav-item nav-link text-dark">${menu.name}</a>`)
+        (menu) => `<a href="${menu.path}" class=" tab-item active text-decoration-none">${menu.name}</a>`)
             .join("")
         }
         </li>

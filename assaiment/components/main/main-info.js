@@ -1,5 +1,6 @@
 import { useEffect, useState } from "../../lib";
 import "../../src/style.css";
+import "./main.css"
 const MainProfile = () => {
     const [profiles, setProfile] = useState([]);
     useEffect(() => {
@@ -16,6 +17,13 @@ const MainProfile = () => {
             <h5 class="product-name ">HEY THERE !</h5>
             <p class="lable-name ">I am ${profiles.name}</p>
             <lable class="fs-2 text-secondary"> ${profiles.job}</lable>
+            <div class="music-waves mt-5 text-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="icons">
                 <a href=""></a>
                 <a href=""></a>

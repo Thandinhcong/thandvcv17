@@ -1,0 +1,30 @@
+.tabs {
+    display: flex;
+    background-color: #6a5af9;
+    border-radius: 8px;
+    padding: 5px;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.tabs .tab-item.active {
+    color: #6a5af9;
+    background-color: white;
+}
+
+.tabs .tab-item {
+    white-space: nowrap;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #999;
+    font-weight: 500;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+.tab:hover {
+    background-color: #5af9;
+}
