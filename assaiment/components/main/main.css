@@ -113,3 +113,20 @@
     text-decoration: none;
     color: #1da8e2;
 }
+
+/* .profile-introduce,
+.frofile-img {
+    position: relative;
+    opacity: 0;
+    /* Ẩn phần tử ban đầu */
+/* transition: opacity 1s, transform 1s; */
+/* Thời gian di chuyển */
+/* } */
+
+/* .profile-introduce {
+    left: 0;
+}
+
+.frofile-img {
+    right: 0;
+} */

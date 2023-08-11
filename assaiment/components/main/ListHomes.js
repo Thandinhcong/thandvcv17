@@ -11,37 +11,22 @@ import ListProject from "./ListProjects";
 import "./main.css"
 import Loading from "./Loading";
 
-$(document).ready(function () {
-    // Thêm lớp animate để kích hoạt hiệu ứng vào các phần tử cần
-    $("header").addClass("animate__animated animate__fadeInDown");
-    $("main").addClass("animate__animated animate__fadeIn");
-
-    // Xử lý sự kiện cuộn
-    $(window).scroll(function () {
-        var scrollPosition = $(window).scrollTop();
-        var elementPosition = $(".viewer").offset().top;
-        var windowHeight = $(window).height();
-
-        if (scrollPosition > elementPosition - windowHeight) {
-            $(".viewer").addClass("animate__animated animate__fadeInUp");
-        }
-    });
-});
-
 
 const ListHomeFage = () => {
     return `
     <div class="animate__animated">
-        <header class="animate__animated animate__fadeInDown">
+        <header  data-aos="fade-up"">
              ${header()}
         </header>
-        <main class="animate__animated animate__fadeIn">
+        <main  data-aos="fade-up" >
             ${MainProfile()}
-            <div class="d-flex align-items-center justify-content-center">
+            <div  data-aos="fade-up" class="d-flex align-items-center justify-content-center">
                 ${Loading()}
             </div>
-            ${introduceInfo()}
-            <div class="viewer animate__animated animate__fadeInUp">
+            <div  data-aos="fade-up" class="introduce">
+                ${introduceInfo()}
+            </div>
+            <div  data-aos="fade-up" class="viewer">
                 ${ContactFage()}
                 ${SkillsFageList()}
                 ${ListLenguage()}
@@ -50,7 +35,7 @@ const ListHomeFage = () => {
             ${ListProducts()};
             ${ListProject()}
         </main>
-        <footer class="animate__animated animate__fadeIn">
+        <footer >
             ${ListFooter()}
         </footer>
     </div>

@@ -1,7 +1,7 @@
 import "../../src/style.css";
 const ListEdu = () => {
     return `   
-    <div class="p-3">
+    <div  data-aos="fade-up" class="p-3">
         <h2 class="text-primary">Education</h2>
         <div class="edu text-muted ms-3">
             <h4 class="text-dark">FPT Polytechnic college</h4>

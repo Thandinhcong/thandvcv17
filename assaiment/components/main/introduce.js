@@ -1,7 +1,7 @@
 
 const introduceInfo = () => {
     return `
-    <div class="introduct m-3">
+    <div class="introduct item data-aos="fade-up" m-3">
         <h2 class="text-primary">Overview</h2>
         <p class="introduct-info ms-4 text-secondary">
         - Experienced programming with good communication skills and quick learning <br>

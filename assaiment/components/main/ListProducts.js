@@ -13,7 +13,7 @@ const ListProducts = () => {
   return `
     <h2 class="text-dark ms-3">Products</h2>
     <div class="container-xxl mt-5">
-    <div class="product row  row-cols-3">
+    <div data-aos="fade-left"  class="product row  row-cols-3">
             ${products.map((product) => `
        <div class="cart col-4">
      <a href="${product.links}">  <img src="${product.image}" class="cart-img-top" style=""  alt="" ></a>
